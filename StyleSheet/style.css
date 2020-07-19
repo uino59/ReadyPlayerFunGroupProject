@@ -89,7 +89,7 @@ p{
     height:52px;
 }
 
-.amusement img{
+#amusements img{
     padding:10px;
     float: top;
     display: block;
@@ -100,16 +100,11 @@ p{
 }
 
 
-
-#amusement p{
-    font-size: 0.7em;
-}
-
-#amusement td{
+#amusements td{
     width: 25vw;
 }
 
-#amusement th{
+#amusements th{
     font-size:0.9em;
     font-family: sans-serif;
     color: #343565;
