@@ -1,0 +1,166 @@
+body{
+    background-color:#d3d3d3;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+
+li{
+    list-style-type:none;
+    display:inline;
+    margin: 0 2vw
+}
+
+nav{
+    width:100vw;
+    height:80px;
+    background-color: #303136;
+}
+
+nav li a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display:inline-block;
+    font-family:sans-serif;
+}
+
+h1{
+    color: #343565;
+    font-family: sans-serif;
+    padding:10px;
+    font-size:1.5em;
+}
+
+h2{
+    color: #343565;
+    font-family: sans-serif;
+    padding:10px;
+    font-size:1.2em;
+}
+
+p{
+    font-family: sans-serif;
+    color: #343565;
+    padding: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:0.95em;
+}
+
+
+/*FAQ.html CSS---------------------------------------*/
+
+
+#logo { grid-area: logo;}
+#faq { grid-area: faq;}
+#technology { grid-area: tech;}
+#accessibility { grid-area: access;}
+#safety { grid-area: safety;}
+#amenities{ grid-area: amenities;}
+
+
+.grid-container-index {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+        'logo nav nav nav'
+        'faq faq faq faq'
+        'tech tech tech tech'
+        'access access access access'
+        'safety safety safety safety'
+        'amenities amenities amenities amenities'
+        'footer footer footer footer'
+}
+
+#logo{
+    float: left;
+    padding: 14px 16px;
+    background-color: #303136;
+    height:52px;
+}
+
+#technology{
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom right, grey, white);
+    background-position: left top;
+    background-repeat: repeat;
+    padding-right: 10px;
+}
+
+#accessibility{
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom left, white, grey);
+    background-position: left top;
+    background-repeat: repeat;
+    padding-right: 10px;
+}
+
+#safety{
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom right, grey, white);
+    background-position: left top;
+    background-repeat: repeat;
+    padding-right: 10px;
+}
+
+#amenities{
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom left, white, grey);
+    background-position: left top;
+    background-repeat: repeat;
+    padding-right: 10px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+

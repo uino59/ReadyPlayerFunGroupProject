@@ -1,0 +1,140 @@
+body{
+    background-color:#d3d3d3;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin:0;
+}
+
+li{
+    list-style-type:none;
+    display:inline;
+    margin: 0 2vw
+}
+
+nav{
+    width:100vw;
+    height:80px;
+    background-color: #303136;
+}
+
+nav li a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display:inline-block;
+    font-family:sans-serif;
+}
+#covid-infographic{
+    float:right;
+    padding:10px;
+}
+
+h1{
+    color: #343565;
+    font-family: sans-serif;
+    padding:10px;
+    font-size:1.5em;
+}
+
+h2{
+    color: #343565;
+    font-family: sans-serif;
+    padding:10px;
+    font-size:1.2em;
+}
+
+p{
+    font-family: sans-serif;
+    color: #343565;
+    padding: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:0.9em;
+}
+
+
+/*Index.html CSS---------------------------------------*/
+
+
+#covid-info { grid-area:info;}
+#logo { grid-area: logo;}
+#amusements {grid-area: attraction;}
+#tickets {grid-area: tickets;}
+
+
+.grid-container-index {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+        'logo nav nav nav'
+        'info info info info'
+        'attraction attraction attraction attraction'
+        'tickets tickets tickets tickets'
+        'footer footer footer footer'
+}
+
+#logo{
+    float: left;
+    padding: 14px 16px;
+    background-color: #303136;
+    height:52px;
+}
+
+.amusement img{
+    padding:10px;
+    float: top;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    max-width: 20vw;
+}
+
+
+
+#amusement p{
+    font-size: 0.7em;
+}
+
+#amusement td{
+    width: 25vw;
+}
+
+#amusement th{
+    font-size:0.9em;
+    font-family: sans-serif;
+    color: #343565;
+    padding: 5px;
+}
+
+#tickets p{
+    font-size: 0.7em;
+    font-family: sans-serif;
+}
+
+#tickets td{
+    width: 10vw;
+    font-family: sans-serif;
+    color: #343565;
+    padding:5px
+}
+
+#tickets th{
+    font-family: sans-serif;
+    color: #343565;
+    padding:5px;
+    text-align: left;
+}
+
+
+
+
