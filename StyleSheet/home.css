@@ -112,6 +112,7 @@ p{
 #tickets {grid-area: tickets;}
 #contact { grid-area: contact;}
 header#header { grid-area: header; }
+footer{ grid-area: footer; }
 
 
 .grid-container-index {
@@ -242,7 +243,8 @@ footer td{
 #location,
 #hours{
     width: 33%;
-    float: left;
+    display: inline-block;
+		vertical-align: top;
 		padding: 0 50px 0 0;
 		box-sizing: border-box;
 }
