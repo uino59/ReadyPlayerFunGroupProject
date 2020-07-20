@@ -1,138 +1,19 @@
-body{
-    background-color:#d3d3d3;
-}
-
-*{
-    -webkit-transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out;
-    -o-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
-}
-
-ul{
-    margin:0;
-    padding:0;
-}
-
-body{
-    margin:0;
-}
-
-li{
-    list-style-type:none;
-    display: inline-block;
-}
-
-header{
-    background: url('../media/double-bubble-dark.png');
-    padding: 40px;
-    width: 100%;
-}
-
-header.sticky{
-    position: fixed;
-}
-
-header nav{
-    display: inline-block;
-    vertical-align: top;
-    margin: 20px 0 0 70px;
-}
-
-nav li a{
-    display: inline-block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 12px 14px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: sans-serif;
-}
-
-nav li a:hover{
-    color: #d7d7d7;
-}
-
-#covid-infographic{
-    float:right;
-    padding:10px;
-}
-
-h1{
-    color: #343565;
-    font-family: sans-serif;
-    padding:10px;
-    font-size:1.5em;
-}
-
-h2{
-    color: #343565;
-    font-family: sans-serif;
-    padding:10px;
-    font-size:1.2em;
-}
-
-p{
-    font-family: sans-serif;
-    color: #343565;
-    padding: 5px;
-    padding-left:10px;
-    padding-right:10px;
-    font-size:0.9em;
-}
-
-
-/*Index.html CSS---------------------------------------*/
-
-
-#covid-info { grid-area:info;}
-#logo { grid-area: logo;}
-#amusements {grid-area: attraction;}
-#tickets {grid-area: tickets;}
-#contact { grid-area: contact;}
-header#header { grid-area: header; }
-
-
-.grid-container-index {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 50px;
-    grid-template-areas:
-        'header header header header'
-        'info info info info'
-        'attraction attraction attraction attraction'
-        'tickets tickets tickets tickets'
-        'contact contact contact contact'
-        'footer footer footer footer'
-}
-
-#logo{
-    float: left;
-    height:52px;
-}
-
 #aboutImg{
-    padding:10px;
-    position: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    max-width: 80vw;
+	padding:10px;
+	position: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	max-width: 80vw;
 }
 
 #aboutImgInline{
-    padding:10px;
-    float:right;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    max-width: 20vw;
- }
-
-/* Contact Section*/
-.blockdesing{
-    margin: 0 5px 0px;
-    float: left
+	padding:10px;
+	float:right;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	max-width: 20vw;
 }
