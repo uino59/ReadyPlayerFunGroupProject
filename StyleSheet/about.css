@@ -1,19 +1,36 @@
+#about{
+	grid-area: about;
+	margin: 30px 50px;
+}
+
+
+.grid-container-index {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+		grid-column-gap: 50px;
+    grid-template-areas:
+        'header header header header'
+				'about about about about'
+        'info info info info-graphic'
+        'attraction attraction attraction attraction'
+        'tickets tickets tickets tickets'
+        'contact contact contact contact'
+        'footer footer footer footer'
+}
+
 #aboutImg{
-	padding:10px;
-	position: center;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	height: auto;
-	max-width: 80vw;
 }
 
 #aboutImgInline{
-	padding:10px;
+	margin: 10px 0 10px 10px;
 	float:right;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	height: auto;
 	max-width: 20vw;
+}
+
+#about p{
+	font-size: 16px;
+	line-height: 1.7em;
+	padding: 0;
 }
