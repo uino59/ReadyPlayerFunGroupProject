@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&family=Oswald:wght@400;700&display=swap');
+
 body{
     background-color:#d3d3d3;
 }
 
 *{
-	-webkit-transition: all 500ms ease-out;
-	-moz-transition: all 500ms ease-out;
-	-o-transition: all 500ms ease-out;
-	transition: all 500ms ease-out;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+
+	max-width: 100%;
+}
+
+h1. h2, h3, h4, h5, h6{
+	font-family: 'Oswald', sans-serif;
+}
+
+body, body p{
+	font-family: 'Open Sans', sans-serif;
 }
 
 ul{
@@ -25,7 +37,7 @@ li{
 
 header{
 	background: url('../media/double-bubble-dark.png');
-	padding: 40px;
+	padding: 40px 0;
 	width: 100%;
 }
 
@@ -46,7 +58,7 @@ nav li a{
     padding: 12px 14px;
     text-decoration: none;
     font-size: 17px;
-    font-family: sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 nav li a:hover{
@@ -54,26 +66,34 @@ nav li a:hover{
 }
 
 #covid-infographic{
-    float:right;
-    padding:10px;
+	margin: auto;
+	margin: auto 50px auto auto;
+}
+
+#covid-info{
+	background: #FFCC00;
+	margin: 50px 0 0 50px;
+	color: #fff;
+	padding: 10px 20px;
+	border: 1px solid #aaa;
 }
 
 h1{
     color: #343565;
-    font-family: sans-serif;
-    padding:10px;
-    font-size:1.5em;
+    font-size: 1.7em;
+}
+
+#amusements h1{
+	margin: 30px 50px;
 }
 
 h2{
     color: #343565;
-    font-family: sans-serif;
     padding:10px;
     font-size:1.2em;
 }
 
 p{
-    font-family: sans-serif;
     color: #343565;
     padding: 5px;
     padding-left:10px;
@@ -86,6 +106,7 @@ p{
 
 
 #covid-info { grid-area:info;}
+#covid-infographic { grid-area:info-graphic;}
 #logo { grid-area: logo;}
 #amusements {grid-area: attraction;}
 #tickets {grid-area: tickets;}
@@ -99,7 +120,7 @@ header#header { grid-area: header; }
 		grid-column-gap: 50px;
     grid-template-areas:
         'header header header header'
-        'info info info info'
+        'info info info info-graphic'
         'attraction attraction attraction attraction'
         'tickets tickets tickets tickets'
         'contact contact contact contact'
@@ -107,20 +128,61 @@ header#header { grid-area: header; }
 }
 
 #logo{
-    float: left;
     padding: 14px 16px;
     background-color: #303136;
     height:52px;
+		display: inline-block;
+		margin-left: 50px;
+}
+
+#amusements{
+	margin-top: 70px;
+}
+
+.amusements_list{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 50px;
+	grid-auto-rows: 1fr;
+	margin: 0 50px;
+}
+
+.amusements_list .amusement{
+	background: #e6e6e6;
+	margin-bottom: 50px;
+	box-shadow: 5px 5px 10px -5px #999999;
+	border: 1px solid #c1c1c1;
+}
+
+.amusements_list .amusement:hover{
+	background: #ffffff;
+	box-shadow: 5px 5px 8px -2px #616161;
+}
+
+.amusements_list .amusement h2{
+	padding: 0;
+	margin: 10px 20px;
+	line-height: 2em;
+}
+
+.amusements_list .amusement p{
+	padding: 0;
+	margin: 10px 20px;
+	line-height: 1.4em;
+}
+
+.amusements_list .amusement em{
+	color: #343565;
+	font-weight: bold;
+	margin: 0 20px 30px;
+	font-size: 14px;
+	display: block;
+	font-style: normal;
 }
 
 #amusements img{
-    padding:10px;
-    float: top;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    max-width: 20vw;
+    max-width: 100%;
 }
 
 
@@ -128,31 +190,46 @@ header#header { grid-area: header; }
     width: 25vw;
 }
 
-#amusements th{
-    font-size:0.9em;
-    font-family: sans-serif;
-    color: #343565;
-    padding: 5px;
+#tickets{
+	margin: 30px 50px;
+}
+
+#tickets table{
+	width: 100%;
+	background: #e6e6e6;
+	padding: 10px;
+	border: 1px solid #aaa;
 }
 
 #tickets p{
     font-size: 0.7em;
-    font-family: sans-serif;
 }
 
 #tickets td{
     width: 10vw;
-    font-family: sans-serif;
     color: #343565;
     padding:5px
 }
 
 #tickets th{
-    font-family: sans-serif;
     color: #343565;
     padding:5px;
     text-align: left;
 }
+
+
+footer{
+	background: url('../media/double-bubble-dark.png');
+	padding: 30px 50px;
+}
+
+footer h3,
+footer p,
+footer span,
+footer td{
+	color: #fff;
+}
+
 
 /* Contact Section*/
 .blockdesing{
@@ -160,26 +237,53 @@ header#header { grid-area: header; }
     float: left
 }
 
-#contact{
-    width: 100%;
-    height: 100%;
-}
 
-#socials{
-    width: 33%;
-    float: left;
-}
-
+#socials,
+#location,
 #hours{
     width: 33%;
     float: left;
+		padding: 0 50px 0 0;
+		box-sizing: border-box;
 }
 
-#location{
-    width: 33%;
-    float: left;
+#socials .contact{
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.8;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 32px;
+	padding-left: 50px;
+	display: block;
+	line-height: 32px;
 }
 
+#socials .contact:hover{
+	opacity: 1;
+}
+
+#socials .contact.gmail{
+	background-image: url('../media/gmail.png');
+}
+
+#socials .contact.phone{
+	background-image: url('../media/phone.png');
+}
+
+#socials .contact.facebook{
+	background-image: url('../media/facebook.png');
+}
+
+#socials .contact.twitter{
+	background-image: url('../media/twitter.png');
+}
+
+footer #location iframe{
+	width: 100%;
+	height: 230px;
+	border: none;
+}
 
 span.contact {
   display: inline-block;
