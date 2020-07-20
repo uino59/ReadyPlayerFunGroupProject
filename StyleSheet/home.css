@@ -171,6 +171,8 @@ header#header { grid-area: header; }
 #hours{
     width: 33%;
     float: left;
+    font-family: sans-serif;
+    color: #343565;
 }
 
 #location{
