@@ -122,7 +122,7 @@ p{
 
 /* Contact Section*/ 
 .blockdesing{
-    margin: 0 5px 0 px;
+    margin: 0 5px 0 5px;
     float: left
 }
 
@@ -144,6 +144,12 @@ p{
 #location{
     width: 33%;
     float: left;
+}
+
+span.contact {
+  display: inline-block;
+  height: 10px;
+  padding: 5px;
 }
 
 /* Dropdown Button */

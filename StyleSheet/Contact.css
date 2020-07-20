@@ -33,10 +33,6 @@ nav li a{
     display:inline-block;
     font-family:sans-serif;
 }
-#covid-infographic{
-    float:right;
-    padding:10px;
-}
 
 h1{
     color: #343565;
@@ -65,10 +61,11 @@ p{
 /*Index.html CSS---------------------------------------*/
 
 
-#covid-info { grid-area:info;}
 #logo { grid-area: logo;}
-#amusements {grid-area: attraction;}
-#tickets {grid-area: tickets;}
+#socials{ grid-area: socials;}
+#hours{ grid-area: hours;}
+#location{grid-area: location;}
+
 
 
 .grid-container-index {
@@ -76,9 +73,6 @@ p{
     grid-template-columns: auto auto auto auto;
     grid-template-areas:
         'logo nav nav nav'
-        'info info info info'
-        'attraction attraction attraction attraction'
-        'tickets tickets tickets tickets'
         'footer footer footer footer'
 }
 
@@ -89,51 +83,42 @@ p{
     height:52px;
 }
 
-.amusement img{
-    padding:10px;
-    float: top;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    max-width: 20vw;
+/* Contact Section*/ 
+.blockdesing{
+    margin: 0 5px 0 5px;
+    float: left
+}
+
+#contact{
+    width: 100%;
+    height: 100%;
+}
+
+#socials{
+    width: 33%;
+    float: left;
+}
+
+#hours{
+    width: 33%;
+    float: left;
+}
+
+#location{
+    width: 33%;
+    float: left;
+}
+
+
+span.contact {
+  display: inline-block;
+  height: 10px;
+  padding: 5px;
 }
 
 
 
-#amusement p{
-    font-size: 0.7em;
-}
 
-#amusement td{
-    width: 25vw;
-}
-
-#amusement th{
-    font-size:0.9em;
-    font-family: sans-serif;
-    color: #343565;
-    padding: 5px;
-}
-
-#tickets p{
-    font-size: 0.7em;
-    font-family: sans-serif;
-}
-
-#tickets td{
-    width: 10vw;
-    font-family: sans-serif;
-    color: #343565;
-    padding:5px
-}
-
-#tickets th{
-    font-family: sans-serif;
-    color: #343565;
-    padding:5px;
-    text-align: left;
-}
 
 
 
