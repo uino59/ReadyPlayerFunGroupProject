@@ -2,6 +2,13 @@ body{
     background-color:#d3d3d3;
 }
 
+*{
+	-webkit-transition: all 500ms ease-out;
+	-moz-transition: all 500ms ease-out;
+	-o-transition: all 500ms ease-out;
+	transition: all 500ms ease-out;
+}
+
 ul{
     margin:0;
     padding:0;
@@ -12,27 +19,42 @@ body{
 }
 
 li{
-    list-style-type:none;
-    display:inline;
-    margin: 0 2vw
+	list-style-type:none;
+	display: inline;
 }
 
-nav{
-    width:100vw;
-    height:80px;
-    background-color: #303136;
+header{
+	width:100vw;
+	height:80px;
+	/* background-color: #303136; */
+	background: url('../media/double-bubble-dark.png');
+	padding: 40px;
+}
+
+header.sticky{
+	position: fixed;
+}
+
+header nav{
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px 0 0 70px;
 }
 
 nav li a{
-    float: left;
+    display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 14px;
     text-decoration: none;
     font-size: 17px;
-    display:inline-block;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
+
+nav li a:hover{
+	color: #d7d7d7;
+}
+
 #covid-infographic{
     float:right;
     padding:10px;
@@ -132,7 +154,7 @@ p{
     text-align: left;
 }
 
-/* Contact Section*/ 
+/* Contact Section*/
 .blockdesing{
     margin: 0 5px 0 px;
     float: left
