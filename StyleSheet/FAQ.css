@@ -64,7 +64,9 @@ p{
 #accessibility { grid-area: access;}
 #safety { grid-area: safety;}
 #amenities{ grid-area: amenities;}
-
+#socials{ grid-area: socials;}
+#hours{ grid-area: hours;}
+#location{grid-area: location;}
 
 .grid-container-index {
     display: grid;
@@ -118,6 +120,7 @@ p{
     padding-right: 10px;
 }
 
+/* Contact Section*/ 
 /* Dropdown Button */
 .dropbtn {
   background-color: #3498DB;
