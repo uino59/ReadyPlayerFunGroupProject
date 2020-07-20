@@ -32,11 +32,11 @@
 				</li>
 
 				<li>
-					<a href="#amusements">Amusements and Events</a>
+					<a href="#amusements" class="scroll-menu-item">Amusements and Events</a>
 				</li>
 
 				<li>
-					<a href="#tickets">Tickets and Opening Times</a>
+					<a href="#tickets" class="scroll-menu-item">Tickets and Opening Times</a>
 				</li>
 
 				<li>
@@ -44,7 +44,7 @@
 				</li>
 
 				<li>
-					<a href="#contact">Contact Us</a>
+					<a href="#contact" class="scroll-menu-item">Contact Us</a>
 				</li>
 
 			</ul>
@@ -368,6 +368,25 @@
 		}
 
 	});
+
+
+
+	document.querySelectorAll(".scroll-menu-item").forEach(function(element){
+		element.addEventListener("click", function(e){
+
+			e.preventDefault();
+
+			// Kudos to https://stackoverflow.com/a/52516025
+			window.scrollTo({
+				top: document.querySelector(element.getAttribute('href')).offsetTop - 250,
+				left: 0,
+				behavior: 'smooth'
+			});
+
+		});
+	});
+
+
 
 </script>
 
