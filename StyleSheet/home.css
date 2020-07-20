@@ -24,11 +24,9 @@ li{
 }
 
 header{
-	width:100vw;
-	height:80px;
-	/* background-color: #303136; */
 	background: url('../media/double-bubble-dark.png');
 	padding: 40px;
+	width: 100%;
 }
 
 header.sticky{
@@ -92,13 +90,15 @@ p{
 #amusements {grid-area: attraction;}
 #tickets {grid-area: tickets;}
 #contact { grid-area: contact;}
+header#header { grid-area: header; }
 
 
 .grid-container-index {
     display: grid;
     grid-template-columns: auto auto auto auto;
+		grid-column-gap: 50px;
     grid-template-areas:
-        'logo nav nav nav'
+        'header header header header'
         'info info info info'
         'attraction attraction attraction attraction'
         'tickets tickets tickets tickets'
