@@ -1,10 +1,12 @@
+/*Stylesheet for the about page */
+
 #about{
 	grid-area: about;
 	margin: 30px 50px;
 }
 
 
-.grid-container-index {
+.grid-container-about {
     display: grid;
     grid-template-columns: auto auto auto auto;
 		grid-column-gap: 50px;
@@ -12,8 +14,6 @@
         'header header header header'
 				'about about about about'
         'info info info info-graphic'
-        'attraction attraction attraction attraction'
-        'tickets tickets tickets tickets'
         'contact contact contact contact'
         'footer footer footer footer'
 }
