@@ -16,30 +16,34 @@
 <body>
 <div class = "grid-container-index">
 
-    <nav>
+    <header id="header">
+
         <div id="logo">
-            <a href="FAQ.html">
+            <a href="index.html">
                 <img src="media/logo.jpg" width="102" height="58">
             </a>
         </div>
-        <ul>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="Home.html">Amusements and Events</a>
-            </li>
-            <li>
-                <a href="Home.html">Tickets and Opening Times</a>
-            </li>
-            <li>
-                <a href="FAQ.html">FAQ</a>
-            </li>
-            <li>
-                <a href="#contact">Contact Us</a>
-            </li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="index.html">Amusements and Events</a>
+                </li>
+                <li>
+                    <a href="index.html">Tickets and Opening Times</a>
+                </li>
+                <li>
+                    <a href="FAQ.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
 
 <!--    Covid19 Introduction --------------------------------->
 
@@ -282,5 +286,23 @@
     </div>
     
 </div>
+<script type="text/javascript">
+
+    window.addEventListener("scroll", function(){
+
+        // console.log(window.scrollY);
+        // console.log(document.getElementById("header").offsetHeight);
+
+        header = document.getElementById("header");
+        if( window.scrollY > header.offsetHeight ){
+            header.classList.add("sticky");
+        }else{
+            header.classList.remove("sticky");
+        }
+
+    });
+
+</script>
+
 </body>
 </html>

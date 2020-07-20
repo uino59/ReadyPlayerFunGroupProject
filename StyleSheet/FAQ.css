@@ -1,5 +1,43 @@
 body{
     background-color:#d3d3d3;
+    margin:0;
+}
+
+*{
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+
+header{
+    background: url('../media/double-bubble-dark.png');
+    padding: 40px;
+    width: 100%;
+}
+
+header.sticky{
+    position: fixed;
+}
+
+header nav{
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 0 0 70px;
+}
+
+nav li a{
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+nav li a:hover{
+    color: #d7d7d7;
 }
 
 ul{
@@ -14,11 +52,8 @@ li{
     margin: 0 2vw
 }
 
-nav{
-    width:100vw;
-    height:80px;
-    background-color: #303136;
-}
+
+
 
 nav li a{
     float: left;
@@ -58,7 +93,8 @@ p{
 /*FAQ.html CSS---------------------------------------*/
 
 
-#logo { grid-area: logo;}
+#logo { grid-area: header;}
+header#header { grid-area: header; }
 #faq { grid-area: faq;}
 #technology { grid-area: tech;}
 #accessibility { grid-area: access;}
@@ -71,8 +107,9 @@ p{
 .grid-container-index {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    grid-column-gap: 50px;
     grid-template-areas:
-        'logo nav nav nav'
+        'header header header header'
         'faq faq faq faq'
         'tech tech tech tech'
         'access access access access'
@@ -83,8 +120,6 @@ p{
 
 #logo{
     float: left;
-    padding: 14px 16px;
-    background-color: #303136;
     height:52px;
 }
 
