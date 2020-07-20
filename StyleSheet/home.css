@@ -32,7 +32,7 @@ body{
 
 li{
 	list-style-type:none;
-	display: inline;
+	display: inline-block;
 }
 
 header{
@@ -233,7 +233,7 @@ footer td{
 
 /* Contact Section*/
 .blockdesing{
-    margin: 0 5px 0 px;
+    margin: 0 5px 0px;
     float: left
 }
 
