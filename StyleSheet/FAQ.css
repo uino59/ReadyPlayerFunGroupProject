@@ -121,6 +121,31 @@ p{
 }
 
 /* Contact Section*/ 
+.blockdesing{
+    margin: 0 5px 0 px;
+    float: left
+}
+
+#contact{
+    width: 100%;
+    height: 100%;
+}
+
+#socials{
+    width: 33%;
+    float: left;
+}
+
+#hours{
+    width: 33%;
+    float: left;
+}
+
+#location{
+    width: 33%;
+    float: left;
+}
+
 /* Dropdown Button */
 .dropbtn {
   background-color: #3498DB;
